@@ -5,57 +5,40 @@
     width: 100%;
     height: 64px;
     background: #4CB332FF;
-    border-radius: 0px 0px 0px 0px;
+    border-radius: 0px;
     box-shadow: 0px 0px 1px #171a1f12, 0px 0px 2px #171a1f1F;
 }
 
 #logo {
     position: absolute;
-    top: 5px;
+    top: 3px;
     left: 15px;
     width: 55px;
     height: 55px;
-    border-radius: 0px;
 }
 
 .navbar-brand {
     position: absolute;
-    top: 19px;
+    top: 12px;
     left: 56px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 25px;
-    line-height: 25px;
     font-weight: 700;
-    color: #FFFFFFFF;
+    color: #fff;
 }
 
 .navbar-nav {
     position: absolute;
     top: 22px;
     left: 506px;
-    width: 429px;
-    height: 22px;
     display: flex;
     align-items: center;
     font-family: Arial, Helvetica, sans-serif;
     font-size: larger;
-    line-height: 22px;
     font-weight: 400;
-    opacity: 1;
 }
 
-#home {
-    padding: 0px 12px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    background: #4CB332FF;
-    border-radius: 0px;
-    cursor: pointer;
-    white-space: nowrap;
-}
-
+#home,
 .nav-link {
     padding: 0px 12px;
     display: flex;
@@ -69,20 +52,15 @@
 }
 
 .title-page {
-    position: relative;;
-    top: 100px;
     text-align: center;
-    margin: 50px 0;
+    margin: 120px 0 50px 0;
     font-family: 'Arial Black', Arial, sans-serif;
     font-size: 36px;
-    line-height: 44px;
     font-weight: 900;
     color: #333333;
 }
 
 .trainer-card {
-    position: relative;
-    top: 100px;
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
@@ -119,3 +97,43 @@
 .book-btn:hover {
     background-color: #218838;
 }
+
+
+footer {
+    color: #4CB332FF;
+    padding: 15px 20px;  
+    text-align: center;
+}
+
+
+footer .footer-col {
+    margin: 10px 0;   
+}
+
+footer h4 {
+    margin-bottom: 15px;
+    font-size: 18px;
+    border-bottom: 2px solid #4CB332FF;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+
+.social-icons a {
+    margin: 0 10px;
+    display: inline-block;
+    font-size: 20px;
+    color: #4CB332FF;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    color: #222;
+}
+
+.footer-bottom {
+    margin-top: 10px; 
+    padding-top: 5px; 
+}
+
+
