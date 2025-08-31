@@ -38,7 +38,7 @@ The project demonstrates strong use of **modern web technologies** and provides 
 ## 🛠 Technical Recommendations
 1. **Frontend**  
    - Use Next.js for SEO and better routing.  
-   - Apply Tailwind CSS for clean and maintainable styling.  
+   - Apply BootStrap CSS for clean and maintainable styling.  
    - Add reusable UI components for consistency.  
 
 2. **Backend**  
