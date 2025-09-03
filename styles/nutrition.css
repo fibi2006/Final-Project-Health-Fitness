@@ -1,9 +1,6 @@
+
   /* Nav Bar */
 
-                                                                                   
-
-
-  /* بيخلي الباك جراوند بتاعت ال NAVbar اخضر */
   .navbar-brand {
     position: absolute;
     display: flex;
@@ -15,13 +12,19 @@
     font-weight: 700; 
     color: #FFFFFFFF;
     align-items: center;
+    margin-left: 4px;
     
 }
-#logo{
-    width: 55px;
-    height: auto;
-    
 
+#webName{
+    margin-left: 0.5px;
+}
+
+
+#logo{
+    width: 25px;
+    height: auto;
+    margin-right: 0px;
 }
 
 .nav {
@@ -33,18 +36,22 @@
 .nav-link {
     color: #FFFFFFFF;
     font-size: 15px;
+    transition: all 0.3s ease;
 }
 .nav-link:hover {
     color: #000000; 
     font-weight: 500;
    
 }
-
-
-/* بيعمل نور عند الصفحة اللي اخترتها */
-.nav-link.active {
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+.nav-link.active{
+     color: #fbfbfb;
+    font-weight: 600;
+    background-color: #4CB332FF; 
+    box-shadow: 0 4px 6px rgb(48, 110, 32); /* ظل يخليها طالعة لفوق */
+    transform: translateY(-2px); /* يرفعها لفوق */
 }
+
+
 
 
                                                                                     /* العنوان*/
@@ -56,6 +63,7 @@
     line-height: 60px; 
     font-weight: 800;
     text-align: center;
+    
  }
 
  .subtitle{
@@ -72,8 +80,12 @@
     font-weight: bold;
     margin-bottom: 40px;
     
+    
  }
-
+.recipes-section{
+    background-color:rgb(244, 244, 251);
+    padding-top: 50px; 
+}
  /*Recipe Nav Bar*/
 
 #recipeNav{
@@ -86,8 +98,23 @@
 }
 
 
-
 /*Cards*/
+
+.details{
+ display: inline-block;
+  margin-right: 18px;
+  margin-left: 10px;
+  font-size:smaller;
+  font-weight: bold;
+}
+.badge{
+    background-color:rgb(39, 125, 17) ;
+    margin-right: 190px;
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
  .card-text{
     font-size: small;
  }
@@ -119,11 +146,60 @@
 
 .space {
     margin-top: 200;
+    
 }
+
 .col-md-4 {
     margin-bottom: 20px; 
 }
 
+.plan{
+  background: #E6FFF1FF; 
+  align-items: center;
+  padding-top: 150px;
+  padding-bottom: 150px;
+ 
+}
+#plan{
+    margin-left: 170px;
+    margin-right: 170px;
+    border-radius: 15px;
+    border-width: 2px;
+    border-style:solid;
+    border-color: #d7d9dc;
+    align-items: center;
+}
+
+#planTitle{
+    font-weight: bold;
+    font-size:35px;
+    margin-top: 70px;
+    margin-left: 20px;
+
+}
+#planSubtitle{
+    font-size: 18px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+
+}
+.btnPlan{
+    background-color:#4CB332FF ;
+    color:#FFFFFFFF ;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 25px;
+    padding: 0 12px;
+    width: 200px; 
+    height: 40px; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    text-decoration: none;
+    margin-bottom: 64px;
+    margin-top: 2px;
+    margin-left: 20px;
+}
 
 /*BMI CALCULATOR*/
 
@@ -192,38 +268,78 @@
 
 /*Footer*/
 
-footer {
-    color: #4CB332FF;
-    padding: 15px 20px;  
-    text-align: center;
+.footer {
+    background: linear-gradient(135deg, #0D1B2A, #1B263B);
+    color: #E0E1DD;
+    font-size: 14px;
+    margin-top: auto;
+    width: 100%;
+    opacity: 0;
+    animation: fadeIn 1s ease-in forwards;
+}
+
+.footer-title {
+    color: #4CB332;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    font-size: 16px;
+}
+
+.footer-text {
+    font-size: 13px;
+    line-height: 1.6;
+    color: #E0E1DD;
 }
 
 
-footer .footer-col {
-    margin: 10px 0;   
+.footer-links li {
+    margin-bottom: 8px;
 }
 
-footer h4 {
-    margin-bottom: 15px;
+.footer-links a {
+    color: #E0E1DD;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #4CB332;
+}
+
+.footer-contact li {
+    margin-bottom: 8px;
+    color: #E0E1DD;
+    font-size: 13px;
+}
+
+.footer-social a {
     font-size: 18px;
-    border-bottom: 2px solid #4CB332FF;
-    display: inline-block;
-    padding-bottom: 5px;
+    color: #E0E1DD;
+    transition: all 0.3s ease;
 }
 
-.social-icons a {
-    margin: 0 10px;
-    display: inline-block;
-    font-size: 20px;
-    color: #4CB332FF;
-    transition: 0.3s;
-}
-
-.social-icons a:hover {
-    color: #222;
+.footer-social a:hover {
+    color: #4CB332;
+    transform: scale(1.15);
 }
 
 .footer-bottom {
-    margin-top: 10px; 
-    padding-top: 5px; 
+    border-top: 1px solid #415A77;
+    color: #778DA9;
+    font-size: 13px;
+    padding-top: 15px;
+    margin-top: 20px;
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
