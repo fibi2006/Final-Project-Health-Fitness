@@ -202,3 +202,43 @@
     left: 0px;
 }
 /* End Fitness */
+
+/* Start Footer */
+footer {
+    color: white ;
+    padding: 15px 20px;  
+    text-align: center;
+  background: linear-gradient(128.64deg, #4CB332FF 0%, rgb(27, 183, 105) 100%);
+   
+}
+
+
+footer .footer-col {
+    margin: 10px 0;   
+}
+
+footer h4 {
+    margin-bottom: 15px;
+    font-size: 18px;
+    border-bottom: 2px solid white;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    display: inline-block;
+    font-size: 20px;
+    color: white;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    color: #222;
+}
+
+.footer-bottom {
+    margin-top: 10px; 
+    padding-top: 5px;
+}
+/* End Footer */
