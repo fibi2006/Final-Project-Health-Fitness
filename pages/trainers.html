@@ -11,25 +11,33 @@
 </head>
 
 <body class="bg-light">
-    <nav class="navbar navbar-expand-lg bg-body-tertiary navbar navbar-expand-lg bg-body-tertiary ">
-        <div class="container-fluid">
-            <img src="../image/trainers/Selection1.png" alt="Logo" id="logo">
-            <a class="navbar-brand" href="#">FitWay</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                    <a class="nav-link active" id="home" aria-current="page" href="#">Home</a>
-                    <a class="nav-link" href="#">Nutrition</a>
-                    <a class="nav-link" href="#">Fitness</a>
-                    <a class="nav-link" href="./trainers.html">Trainers</a>
-                    <a class="nav-link" href="./rewards.html">Rewards</a>
-                    <a class="nav-link" href="#footer">Contact</a>
-                </div>
-            </div>
-        </div>
+    <nav class="fixed-top">
+        <ul class="nav justify-content-center">
+            <li class="nav-item">
+                <a class="navbar-brand " href="#">
+                    <img src="../image/trainers/Logo.png" alt="Logo" id="logo" class="me-2">
+                    <span id="webName">FitWay</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link home " href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link nutrition" aria-current="page" href="nutrition.html">Nutrition</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link fitness " href="fitness.html">Fitness</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link trainers active" aria-current="page" href="./trainers.html">Trainers</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link rewards " href="./rewards.html">Rewards</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link Contact " href="contact.html">Contact</a>
+            </li>
+        </ul>
     </nav>
 
     <h1 class="title-page">Find Your Perfect Trainer</h1>
@@ -118,54 +126,21 @@
         </div>
     </div>
 
-    <footer class="footer pt-5 mt-5" id="footer">
-        <div class="container">
-            <div class="row text-center text-md-start">
-                <div class="col-12 col-md-3 mb-4">
-                    <h5 class="footer-title">About FitWay</h5>
-                    <p class="footer-text">
-                        FitWay helps you connect with professional trainers, get personalized nutrition plans,
-                        and achieve your health goals with expert guidance.
-                    </p>
-                </div>
-
-                <div class="col-6 col-md-3 mb-4">
-                    <h5 class="footer-title">Quick Links</h5>
-                    <ul class="list-unstyled footer-links">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="./trainers.html">Trainers</a></li>
-                        <li><a href="#">Nutrition</a></li>
-                        <li><a href="./rewards.html">Rewards</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                </div>
-
-                <div class="col-6 col-md-3 mb-4">
-                    <h5 class="footer-title">Contact Us</h5>
-                    <ul class="list-unstyled footer-contact">
-                        <li><i class="fa-solid fa-envelope me-2"></i> support@fitway.com</li>
-                        <li><i class="fa-solid fa-phone me-2"></i> +20 123 456 7890</li>
-                        <li><i class="fa-solid fa-location-dot me-2"></i> Cairo, Egypt</li>
-                    </ul>
-                </div>
-
-                <div class="col-12 col-md-3 mb-4 text-center text-md-start">
-                    <h5 class="footer-title">Follow Us</h5>
-                    <div class="d-flex justify-content-center justify-content-md-start gap-3 footer-social">
-                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="footer-bottom text-center pt-3 mt-3">
-                <p>© 2025 FitWay | All Rights Reserved.</p>
+    <footer>
+        <div class="footer-col">
+            <h4>Contact Us</h4>
+            <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
             </div>
         </div>
-    </footer>
 
+        <div class="footer-bottom">
+            <p>© 2025 FitWay. All Rights Reserved.</p>
+        </div>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 

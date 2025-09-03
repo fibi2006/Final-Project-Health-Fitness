@@ -1,55 +1,59 @@
-.container-fluid {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    height: 64px;
-    background: #4CB332FF;
-    border-radius: 0px;
-    box-shadow: 0px 0px 1px #171a1f12, 0px 0px 2px #171a1f1F;
-}
-
-#logo {
-    position: absolute;
-    top: 3px;
-    left: 15px;
-    width: 55px;
-    height: 55px;
-}
-
 .navbar-brand {
     position: absolute;
-    top: 12px;
+    display: flex;
+    top: 1px;
     left: 56px;
+    ;
     font-family: Arial, Helvetica, sans-serif;
+    /* Heading */
     font-size: 25px;
+    line-height: 25px;
     font-weight: 700;
-    color: #fff;
-}
-
-.navbar-nav {
-    position: absolute;
-    top: 22px;
-    left: 506px;
-    display: flex;
+    color: #FFFFFFFF;
     align-items: center;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: larger;
-    font-weight: 400;
+    margin-left: 4px;
+
 }
 
-#home,
+#webName {
+    margin-left: 0.5px;
+}
+
+
+#logo {
+    width: 25px;
+    height: auto;
+    margin-right: 0px;
+}
+
+.nav {
+    background-color: #4CB332FF;
+
+}
+
+/* بيغير لون النص اللي مكتوب في ال Nav */
 .nav-link {
-    padding: 0px 12px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    background: #4CB332FF;
-    border-radius: 0px;
-    cursor: pointer;
-    white-space: nowrap;
+    color: #FFFFFFFF;
+    font-size: 15px;
+    transition: all 0.3s ease;
 }
+
+.nav-link:hover {
+    color: #000000;
+    font-weight: 500;
+
+}
+
+.nav-link.active {
+    color: #fbfbfb;
+    font-weight: 600;
+    background-color: #4CB332FF;
+    box-shadow: 0 4px 6px rgb(48, 110, 32);
+    /* ظل يخليها طالعة لفوق */
+    transform: translateY(-2px);
+    /* يرفعها لفوق */
+}
+
 
 .title-page {
     text-align: center;
@@ -69,6 +73,7 @@
     margin: auto;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
 .trainer-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
@@ -113,78 +118,40 @@ body {
     scroll-behavior: smooth;
 }
 
-.footer {
-    background: linear-gradient(135deg, #0D1B2A, #1B263B);
-    color: #E0E1DD;
-    font-size: 14px;
-    margin-top: auto;
-    width: 100%;
-    opacity: 0;
-    animation: fadeIn 1s ease-in forwards;
-}
+footer {
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+    background: linear-gradient(128.64deg, #4CB332FF 0%, rgb(27, 183, 105) 100%);
 
-.footer-title {
-    color: #4CB332;
-    font-weight: 700;
-    margin-bottom: 1rem;
-    font-size: 16px;
-}
-
-.footer-text {
-    font-size: 13px;
-    line-height: 1.6;
-    color: #E0E1DD;
 }
 
 
-.footer-links li {
-    margin-bottom: 8px;
+footer .footer-col {
+    margin: 10px 0;
 }
 
-.footer-links a {
-    color: #E0E1DD;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-.footer-links a:hover {
-    color: #4CB332;
-}
-
-.footer-contact li {
-    margin-bottom: 8px;
-    color: #E0E1DD;
-    font-size: 13px;
-}
-
-.footer-social a {
+footer h4 {
+    margin-bottom: 15px;
     font-size: 18px;
-    color: #E0E1DD;
-    transition: all 0.3s ease;
+    border-bottom: 2px solid white;
+    display: inline-block;
+    padding-bottom: 5px;
 }
 
-.footer-social a:hover {
-    color: #4CB332;
-    transform: scale(1.15);
+.social-icons a {
+    margin: 0 10px;
+    display: inline-block;
+    font-size: 20px;
+    color: white;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    color: #222;
 }
 
 .footer-bottom {
-    border-top: 1px solid #415A77;
-    color: #778DA9;
-    font-size: 13px;
-    padding-top: 15px;
-    margin-top: 20px;
-}
-
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+    margin-top: 10px;
+    padding-top: 5px;
 }
