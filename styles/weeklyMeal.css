@@ -1,0 +1,57 @@
+.interface{
+      background: #F5FBF4FF; 
+}
+/*Cards*/
+
+.details{
+ display: inline-block;
+  margin-right: 18px;
+  margin-left: 10px;
+  font-size:smaller;
+  font-weight: bold;
+}
+.badge{
+    background-color:rgb(39, 125, 17) ;
+    margin-right: 190px;
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+ .card-text{
+    font-size: small;
+ }
+
+ .btn {
+
+   background-color:white;
+   color:#4CB332FF  ;
+   font-weight: 450;
+   border-style: none;
+   padding: 0 12px;
+   width: 280px; 
+  height: 35px; 
+   display: flex; 
+  align-items: center; 
+  justify-content: center;
+  align-content: center;
+  
+  
+   
+ }
+.card1, .card2, .card3, .card4, .card5, .card6{
+    box-shadow: 0px 0px 1px #171a1f12, 0px 0px 2px #171a1f1F;
+    border-radius: 12px;
+    flex: 1;
+    margin: auto;
+    
+}
+
+
+.nav-days{
+    margin-left: 29%;
+}
+
+.nav-pills{
+   
+}

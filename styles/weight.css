@@ -102,11 +102,10 @@
 
 .details{
  display: inline-block;
-  margin-right: 30px;
-  margin-left: 35px;
+  margin-right: 18px;
+  margin-left: 10px;
   font-size:smaller;
   font-weight: bold;
-  
 }
 .badge{
     background-color:rgb(39, 125, 17) ;
@@ -114,7 +113,6 @@
     margin-left: 20px;
     margin-top: 10px;
     margin-bottom: 10px;
-    width: 75px;
 }
 
  .card-text{
@@ -127,29 +125,16 @@
    color:#FFFFFFFF ;
    font-weight: 450;
    border-radius: 25px;
-    border-color:#4CB332FF  ;
-    border-style: solid;
    padding: 0 12px;
-   width: 415px; 
+   width: 280px; 
   height: 35px; 
    display: flex; 
   align-items: center; 
   justify-content: center;
   align-content: center;
   
+   
  }
- .btn:hover{
-    background-color: rgb(39, 125, 17) !important;
-    border-color:rgb(39, 125, 17) !important ;
-    border-style: solid;
- }
- 
- .btn:active{
-    background-color: rgb(39, 125, 17) !important;
-    border-color:rgb(39, 125, 17) !important ;
-    border-style: solid;
- }
-
 .card1, .card2, .card3, .card4, .card5, .card6{
     box-shadow: 0px 0px 1px #171a1f12, 0px 0px 2px #171a1f1F;
     border-radius: 12px;
@@ -157,11 +142,8 @@
     margin: auto;
     
 }
-.steps{
-    font-weight: bold;
-}
 
-/*Personal Plan*/
+
 .space {
     margin-top: 200;
     
@@ -207,8 +189,6 @@
     font-size: 14px;
     font-weight: 500;
     border-radius: 25px;
-    border-color:#4CB332FF  ;
-    border-style: solid;
     padding: 0 12px;
     width: 200px; 
     height: 40px; 
@@ -220,24 +200,12 @@
     margin-top: 2px;
     margin-left: 20px;
 }
-.btnPlan:hover{
-    background-color: rgb(39, 125, 17);
-    border-color:rgb(39, 125, 17)  ;
-    border-style: solid;
-}
-.breakfast{
-    background-color: #f1ed8eff;
-}
-.lunch{
-    background-color: #ADD8E6;
-}
-.dinner{
-    background-color: #90EE90;
-}
+
 /*BMI CALCULATOR*/
 
 #calculator{
     margin-top: 150px;
+
 }
 
 .card-title{
@@ -253,8 +221,6 @@
     color:#FFFFFFFF ;
     font-weight: 500;
     border-radius: 25px;
-    border-color:#4CB332FF  ;
-    border-style: solid;
     padding: 0 12px;
     width: 150px; 
     height: 40px; 
@@ -264,24 +230,10 @@
     align-content: center;
     text-decoration: none;
     margin: auto;
+
 }
-.btnBMI:hover{
-    background-color: rgb(39, 125, 17);
-    border-color:rgb(39, 125, 17)  ;
-    border-style: solid;
-}
-#bmiResult{
-   text-align: center;
-   margin-left: 310px;
-   padding: 10px;
-   padding-top: 50px;
-   font-weight: bold;
-   font-size: larger;
-   background-color: white;
-   width: 300px;
-   border-radius: 20px;
-   background-size:cover;
-}
+
+
 
 
 .inputs{
@@ -314,12 +266,16 @@
     font-weight: 100;
 }
 
-/* Start Footer */
- footer {
+/*Footer*/
+
+/*Footer*/
+
+footer {
     color: white ;
     padding: 15px 20px;  
     text-align: center;
-    background: linear-gradient(128.64deg, #4CB332FF 0%, rgb(27, 183, 105) 100%);
+  background: linear-gradient(128.64deg, #4CB332FF 0%, rgb(27, 183, 105) 100%);
+   
 }
 
 
@@ -349,9 +305,8 @@ footer h4 {
 
 .footer-bottom {
     margin-top: 10px; 
-    padding-top: 5px;
+    padding-top: 5px; 
 }
-/* End Footer */
 
 @keyframes fadeIn {
     from {

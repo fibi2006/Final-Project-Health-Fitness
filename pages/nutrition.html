@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nutrition</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -17,27 +18,27 @@
         <ul class="nav justify-content-center">
             <li class="nav-item">
                 <a class="navbar-brand " href="#">
-                    <img src="./../image/nutrition/Logo.png" alt="Logo" id="logo" class="me-2">
+                    <img src="./../image/logo (2) - Copy.png" alt="Logo" id="logo" class="me-2">
                     <span id="webName">FitWay</span>
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link home " href="../index.html">Home</a>
+                <a class="nav-link home " href="index.html">Home</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link nutrition active" aria-current="page" href="nutrition.html">Nutrition</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link fitness " href="fitness.html">Fitness</a>
+                <a class="nav-link fitness " href="#">Fitness</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link trainers"  href="trainers.html">Trainers</a>
+                <a class="nav-link trainers" href="#">Trainers</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link rewards " href="rewards.html">Rewards</a>
+                <a class="nav-link rewards " href="#">Rewards</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link Contact " href="contact.html">Contact</a>
+                <a class="nav-link Contact " href="#">Contact</a>
             </li>
         </ul>
     </nav>
@@ -77,10 +78,10 @@
 
         <div class="container space">
 
-            <div class="row">
+            <div class="row ">
                 <div class="col-md-4">
 
-                    <div class="card1 h-100" style="width: 18rem;">
+                    <div class="card1 h-100">
                         <img src="./../image/nutrition/card 1.png" class="card-img-top" alt="...">
                         <div class="card-body d-flex flex-column">
                             <span class="badge  ">350 kcal</span>
@@ -92,16 +93,63 @@
                                 <p class="details"> Protein: 35g</p>
                                 <p class="details"> Carbs: 20g</p>
                                 <p class="details"> Fat: 12g</p>
-
                             </div>
-                            <a href="#" class="btn  mt-auto">View Recipe</a>
+                        </div>
+
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#recipe1">
+                            View Recipe
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="recipe1" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel">Directions</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p class="steps">Step 1 <br></p>
+
+                                        Preheat the oven to 375 degrees F (190 degrees C) and grease an 8x8-inch baking
+                                        dish.
+                                        <p class="steps">Step 2 <br></p>
+
+                                        Combine grated pecorino and breadcrumbs in a small bowl; set aside.
+                                        <p class="steps">Step 3 <br></p>
+                                        Bring a large pot of salted water to a boil. Add ziti, and cook until tender
+                                        with a bite, about 11 minutes. Drain; reserve about 2 tablespoons pasta water.
+                                        <p class="steps">Step 4 <br></p>
+
+                                        Meanwhile, melt butter in a large nonstick skillet over medium heat. Add chopped
+                                        onion; cook and stir until onion begins to soften, 2 to 3 minutes. Stir in
+                                        garlic, herb seasoning, and red pepper flakes, and cook about 30 seconds.
+                                        <p class="steps">Step 5 <br></p>
+
+                                        Turn off heat. Stir in chicken, spinach, cream, Boursin, and mozzarella,
+                                        stirring until cheeses are melted and ingredients are well combined.
+                                        <p class="steps">Step 6 <br></p>
+
+                                        Stir drained ziti into chicken mixture. Loosen the sauce with reserved pasta
+                                        water, if needed. Pour chicken and sauce mixture into the prepared baking dish.
+                                        Sprinkle pecorino and bread crumb mixture over the top.
+                                        <p class="steps">Step 7 <br></p>
+
+                                        Bake in the center of the preheated oven until bubbly and lightly browned, 20 to
+                                        30 minutes. Serve warm.
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
 
 
                 <div class="col-md-4">
-                    <div class="card2 h-100" style="width: 18rem;">
+                    <div class="card2 h-100">
                         <img src="./../image/nutrition/card 2.png" class="card-img-top" alt="...">
                         <div class="card-body d-flex flex-column">
                             <span class="badge  ">420 kcal</span>
@@ -113,14 +161,56 @@
                                 <p class="details"> Fat: 18g</p>
 
                             </div>
-                            <a href="#" class="btn  mt-auto">View Recipe</a>
+
+                        </div>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary " data-bs-toggle="modal" data-bs-target="#recipe2">
+                            View Recipe
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="recipe2" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel">Directions</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p class="steps">Step 1 <br></p>
+
+                                        Preheat the oven to 350 degrees F (175 degrees C). Grease a 9x13-inch baking
+                                        dish with cooking spray.
+                                        <p class="steps">Step 2 <br></p>
+
+                                        Heat a large frying pan or Dutch oven over medium-high heat. Cook and stir
+                                        ground beef in the hot pan until browned and crumbly, 5 to 7 minutes. Add tomato
+                                        sauce, gravy, half-and-half, Parmesan cheese, garlic, oregano, and basil. Simmer
+                                        for 30 minutes.
+                                        <p class="steps">Step 3 <br></p>
+
+                                        Meanwhile, fill a large pot with lightly salted water and bring to a rolling
+                                        boil. Stir in ziti, bring back to a boil, and cook pasta over medium heat until
+                                        tender yet firm to the bite, 10 to 12 minutes. Drain.
+                                        <p class="steps">Step 4 <br></p>
+
+                                        Stir ziti into meat sauce, then spread into the prepared baking dish. Sprinkle
+                                        top with mozzarella cheese.
+                                        <p class="steps">Step 5 <br></p>
+
+                                        Bake in the preheated oven until bubbly, 20 to 30 minutes.
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
 
 
                 <div class="col-md-4">
-                    <div class="card3 h-100" style="width: 18rem;">
+                    <div class="card3 h-100">
                         <img src="./../image/nutrition/card 3.png" class="card-img-top" alt="...">
                         <div class="card-body d-flex flex-column">
                             <span class="badge  ">320 kcal</span>
@@ -133,7 +223,45 @@
                                 <p class="details"> Fat: 10g</p>
 
                             </div>
-                            <a href="#" class="btn mt-auto ">View Recipe</a>
+                        </div>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#recipe3">
+                            View Recipe
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="recipe3" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel">Directions</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p class="steps">Step 1 <br></p>
+
+                                        Gather all ingredients.
+                                        <p class="steps">Step 2 <br></p>
+
+                                        Season chuck roast with salt and pepper.
+                                        <p class="steps">Step 3 <br></p>
+
+                                        Heat oil in a large skillet over high heat; add roast and sear to brown, about 4
+                                        minutes per side.
+                                        <p class="steps">Step 4 <br></p>
+
+                                        Place roast in the slow cooker and sprinkle soup mix on top.
+                                        <p class="steps">Step 5 <br></p>
+
+                                        Add water, and scatter carrots, potatoes, onion, and celery on top.
+                                        <p class="steps">Step 6 <br></p>
+
+                                        Cover and cook on Low for 8 to 10 hours.
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -143,7 +271,7 @@
             <div class="row">
 
                 <div class="col-md-4">
-                    <div class="card4 h-100" style="width: 18rem;">
+                    <div class="card4 h-100">
                         <img src="./../image/nutrition/card 4.png" class="card-img-top" alt="...">
                         <div class="card-body d-flex flex-column">
                             <span class="badge  ">380 kcal</span>
@@ -156,13 +284,57 @@
                                 <p class="details"> Fat: 15g</p>
 
                             </div>
-                            <a href="#" class="btn  mt-auto">View Recipe</a>
+
+                        </div>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#recipe4">
+                            View Recipe
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="recipe4" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel">Directions</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p class="steps">Step 1 <br></p>
+
+                                        Gather all ingredients.
+                                        <p class="steps">Step 2 <br></p>
+
+                                        Place peas in a large stockpot and cover with several inches of cold water; let
+                                        soak, 1 hour to overnight. Drain, rinse, and return peas to the pot.
+                                        <p class="steps">Step 3 <br></p>
+
+                                        Add 2 quarts of cold water, ham bone, onion, salt, pepper, and marjoram to the
+                                        stockpot. Cover, bring to a boil, and simmer for 1 ½ hours, stirring
+                                        occasionally.
+                                        <p class="steps">Step 4 <br></p>
+
+                                        Remove ham bone; cut off meat, dice, and return meat to soup.
+                                        <p class="steps">Step 5 <br></p>
+
+                                        Add celery, carrots, and potatoes.
+                                        <p class="steps">Step 6 <br></p>
+
+                                        Cook slowly, uncovered, until vegetables are tender, about 30 to 40 minutes.
+                                        <p class="steps">Step 7 <br></p>
+
+                                        Serve and enjoy!
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-md-4">
-                    <div class="card5 h-100" style="width: 18rem;">
+                    <div class="card5 h-100">
                         <img src="./../image/nutrition/card 5.png" class="card-img-top" alt="...">
                         <div class="card-body d-flex flex-column">
 
@@ -177,14 +349,62 @@
                                 <p class="details"> Fat: 10g</p>
 
                             </div>
-                            <a href="#" class="btn  mt-auto">View Recipe</a>
+
+                        </div>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#recipe5">
+                            View Recipe
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="recipe5" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel">Directions</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p class="steps">Step 1 <br></p>
+
+                                        Gather all ingredients. Preheat the oven to 350 degrees F (175 degrees C).
+                                        Grease a 9x13-inch baking dish with cooking spray.
+                                        <p class="steps">Step 2 <br></p>
+
+                                        Whisk rice, water, chicken soup, mushroom soup, onion, bell pepper, onion soup
+                                        mix, and oregano in a large bowl until well combined.
+                                        <p class="steps">Step 3 <br></p>
+
+                                        Pour rice mixture into the prepared dish.
+                                        <p class="steps">Step 4 <br></p>
+
+                                        Sprinkle chicken thighs with seasoning salt and arrange on top of rice mixture.
+                                        Cover dish tightly with foil.
+                                        <p class="steps">Step 5 <br></p>
+
+                                        Bake in the preheated oven, keeping tightly covered, for 1 hour 30 minutes. An
+                                        instant-read thermometer inserted into the center should read at least 165
+                                        degrees F (74 degrees C).
+                                        <p class="steps">Step 6 <br></p>
+
+                                        Serve and enjoy.
+
+                                        Test Kitchen Tips
+                                        This recipe was tested in our test kitchen in May 2023 and updated to bake,
+                                        covered, for 1 hour and 30 minutes. We used 2 cups of water instead of chicken
+                                        broth and added onion soup mix.
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
 
 
                 <div class="col-md-4">
-                    <div class="card6 h-100" style="width: 18rem;">
+                    <div class="card6 h-100">
                         <img src="./../image/nutrition/card 6.png" class="card-img-top" alt="...">
                         <div class="card-body d-flex flex-column">
 
@@ -199,92 +419,183 @@
                                 <p class="details"> Fat: 18g</p>
 
                             </div>
-                            <a href="#" class="btn  mt-auto">View Recipe</a>
 
+                        </div>
+
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#recipe6">
+                            View Recipe
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="recipe6" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel">Directions</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p class="steps">Step 1 <br></p>
+
+                                        Gather all ingredients.
+                                        <p class="steps">Step 2 <br></p>
+
+                                        Grind garlic and pinch of salt together in a mortar and pestle until smooth; add
+                                        parsley and mix well. Pound butter into garlic mixture with the pestle until
+                                        well combined. Wrap butter mixture in plastic wrap; refrigerate until cold, at
+                                        least 15 minutes.
+                                        <p class="steps">Step 3 <br></p>
+
+                                        Season chicken breasts with salt and pepper. Place 1/4 of the butter mixture in
+                                        the center of the wider end of each chicken breast.
+                                        <p class="steps">Step 4 <br></p>
+
+                                        Fold the narrower end of each chicken breast up over butter to form a tight
+                                        pocket around the butter; gather the sides of each chicken breast to the center
+                                        to form a round ball. The top of each chicken ball will be smooth and the bottom
+                                        will be gathered. Tightly wrap each chicken ball in plastic wrap; transfer to a
+                                        plate and chill in the freezer until the gathered bottoms hold together and are
+                                        slightly firm, about 30 minutes.
+                                        <p class="steps">Step 5 <br></p>
+
+                                        Whisk flour and 2 teaspoons salt together in a shallow bowl. Whisk eggs together
+                                        in another shallow bowl. Pour panko bread crumbs into a third bowl.
+                                        <p class="steps">Step 6 <br></p>
+
+                                        Remove chicken breast balls from plastic wrap. Gently press them into flour
+                                        mixture to coat; shake off any excess flour. Dip into beaten eggs, then press
+                                        into bread crumbs. Place breaded chicken on a plate; cover with plastic wrap,
+                                        and return to the freezer to chill until firm, about 15 minutes.
+                                        <p class="steps">Step 7 <br></p>
+
+                                        Heat oil in a deep-fryer or large saucepan to 350 degrees F (175 degrees C).
+                                        Preheat the oven to 400 degrees F (200 degrees C). Line a baking sheet with
+                                        aluminum foil. Working in batches, place chicken, gathered-side down, in hot oil
+                                        and cook until lightly golden, about 1 minute per side. Transfer chicken to the
+                                        prepared baking sheet; sprinkle salt and cayenne pepper over the top.
+                                        <p class="steps">Step 8 <br></p>
+
+                                        Bake in the preheated oven until you can hear the butter start to sizzle on the
+                                        baking sheet, 15 to 17 minutes. An instant-read thermometer inserted into the
+                                        center should read at least 165 degrees F (74 degrees C).
+                                        <p class="steps">Step 9 <br></p>
+
+                                        Let rest for a few minutes before serving.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <br><br>
+        </div>
+
+        <!--Weekly Meal Plan-->
+        <div class="plan">
+            <div id="plan">
+                <p id="planTitle">Your Personalized Weekly Meal Plan</p>
+                <p id="planSubtitle">Generate a comprehensive weekly meal plan tailored to your dietary <br>preferences,
+                    fitness
+                    goals, and even ingredient substitutions. Take the <br> guesswork out of healthy eating.</p>
+                <!-- <a href="#" id="GenerateBTN" class="btnPlan btn-primary">Generate Your Weekly Plan</a>-->
+
+                <!-- Button trigger modal -->
+                <button type="button" id="GenerateBTN" class="btnPlan btn-primary " data-bs-toggle="modal"
+                    data-bs-target="#exampleModal">
+                    Generate Your Weekly Plan
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">Your 7-Day Customized Meal Plan</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body ">
+                                <!--7 day meal-->
+                                <div id="mealPlan" class="row">
+                                
+                                </div>
+
+                            </div>
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
-        <br><br>
-    </div>
 
-    <!--Weekly Meal Plan-->
-    <div class="plan">
-        <div id="plan">
-            <p id="planTitle">Your Personalized Weekly Meal Plan</p>
-            <p id="planSubtitle">Generate a comprehensive weekly meal plan tailored to your dietary <br>preferences,
-                fitness
-                goals, and even ingredient substitutions. Take the <br> guesswork out of healthy eating.</p>
-                <a href="#" class="btnPlan btn-primary">Generate Your Weekly Plan</a>
-        </div>
-    </div>
 
-    
 
-    <br><br><br><br><br><br><br><br><br><br><br><br>
-    <!--BMI CALCULATOR-->
-    <div class="container space">
-        <div id="calculator" class="card w-75 mb-3">
-            <div class="card-body">
-                <h5 class="card-title">BMI Calculator</h5>
-                <p class="card-text text">Calculate your Body Mass Index to understand your health status.</p>
+        <br><br><br><br><br><br><br><br><br><br><br><br>
+        <!--BMI CALCULATOR-->
+        <div class="container space">
+            <div id="calculator" class="card w-75 mb-3">
+                <div class="card-body">
+                    <h5 class="card-title">BMI Calculator</h5>
+                    <p class="card-text text">Calculate your Body Mass Index to understand your health status.</p>
 
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="mb-3">
-                            <label for="Height" class="form-label">Height(cm)</label>
-                            <input type="number" class="form-control  inputs" placeholder="e.g., 175" required min="100"
-                                max="220">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="mb-3">
+                                <label for="Height" class="form-label">Height(cm)</label>
+                                <input type="number" id="height" class="form-control  inputs" placeholder="e.g., 175"
+                                    required min="100" max="220">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="mb-3">
+                                <label for="Weight" class="form-label">Weight (kg)</label>
+                                <input type="number" id="weight" class="form-control  inputs" placeholder="e.g., 70"
+                                    required min="30" max="200">
+                            </div>
                         </div>
                     </div>
-
-                    <div class="col-md-6">
-                        <div class="mb-3">
-                            <label for="Weight" class="form-label">Weight (kg)</label>
-                            <input type="number" class="form-control  inputs" placeholder="e.g., 70" required min="30"
-                                max="200">
-                        </div>
+                    <div class="mb-3">
+                        <label for="Age" class="form-label">Age (optional)</label>
+                        <input type="number" id="age" class="form-control  inputs" placeholder="e.g., 30" min="5"
+                            max="100">
                     </div>
-
-
-
+                   <!-- <button type="button" id="calculateBMI" class="btnBMI btn-lg btn-danger" data-bs-toggle="popover"
+                       title="Your BMI Result" data-bs-content=""  data-bs-placement="bottom">
+                        Calculate BMI
+                    </button>--> 
+                   <button id="calculateBMI" class="btnBMI btn-primary ">Calculate BMI</button>
+                   <div id="bmiResult" class="mt-3"></div>
                 </div>
-
-
-                <div class="mb-3">
-                    <label for="Age" class="form-label">Age (optional)</label>
-                    <input type="number" class="form-control  inputs" placeholder="e.g., 30" min="5" max="100">
-                </div>
-
-                <a href="#" class="btnBMI btn-primary">Calculate BMI</a>
-
-            </div>
-        </div>
-    </div>
-
-
-
-    <!--Footer-->
-    <footer>
-        <div class="footer-col">
-            <h4>Contact Us</h4>
-            <div class="social-icons">
-                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                <a href="#"><i class="fa-brands fa-x-twitter"></i></i></a>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
             </div>
         </div>
 
-        <div class="footer-bottom">
-            <p>© 2025 FitWay. All Rights Reserved.</p>
-        </div>
-    </footer>
 
-  
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+        <!-- Start Footer  -->
+        <footer>
+            <div class="footer-col">
+                <h4>Contact Us</h4>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-x-twitter"></i></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2025 FitWay. All Rights Reserved.</p>
+            </div>
+        </footer>
+
+        <!-- End Footer  -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="./../script/nutrition.js"></script>
 
 </body>
 
