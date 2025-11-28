@@ -1,4 +1,3 @@
-// ...existing code...
 document.addEventListener("DOMContentLoaded", () => {
   const STEP = 10;
 
@@ -30,4 +29,3 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
-// ...existing code...
