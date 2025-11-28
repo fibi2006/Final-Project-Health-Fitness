@@ -1,3 +1,4 @@
+:root { --green: #4CB332FF; }
 .navbar-brand {
     position: absolute;
     display: flex;
@@ -260,104 +261,44 @@
 }
 }
 
+    h1 { width: fit-content; margin: auto; font-size: 60px; font-weight: 800; margin-top: 100px; margin-bottom: 30px; background: linear-gradient(90deg, #4CB332FF 0%, #00A8A0FF 100%); background-clip: text; color: transparent; }
+    .fa-envelope { position: relative; left: -7px; color: var(--green); }
+    p { font-size: 18px; font-weight: 400; color: #565D6DFF; width: 768px; margin: auto; text-align: center; }
 
-.title-page {
+    .contact-form { width: 672px; padding: 60px; margin: auto; margin-top: 50px; border-radius: 10px; box-shadow: 2px 2px 5px #171a1f12, 0px 0px 2px #171a1f1F; position: relative; }
+    h3 { font-size: 30px; font-weight: 700; text-align: center; margin-bottom: 40px; }
+    label { display: block; font-size: 17px; font-weight: 500; margin-bottom: 10px; }
+
+    input, textarea, select, input[type="datetime-local"], input[type="tel"] { width: 560px; height: 53px; border-radius: 10px; border: 1px solid #DEE1E6FF; padding: 12px 14px; margin-bottom: 40px; outline: none; font-size: 16px; }
+    textarea { height: 118px; }
+
+    select { background-color: white; appearance: none; -webkit-appearance: none; -moz-appearance: none; position: relative; }
+    select::after { content: '\f078'; font-family: "Font Awesome 5 Free"; font-weight: 900; position: absolute; right: 15px; top: 18px; pointer-events: none; color: #565D6DFF; }
+    input[type="datetime-local"] { font-family: Arial, sans-serif; }
+
+    .contact-btn { background: linear-gradient(90deg, #4CB332FF 0%, #00A8A0FF 100%); color: white; font-size: 18px; width: 560px; height: 40px; border-radius: 16px; margin-top: 30px; transition: 0.3s; cursor: pointer; }
+    .contact-btn:hover { background: linear-gradient(90deg, #4CB332FF 70%, #00A8A0FF 100%); transform: scale(1.02); }
+    .contact-btn:active { background: linear-gradient(90deg, #4CB332FF); }
+
+    /* Animated success message */
+    .success-message {
+    display: none;
     text-align: center;
-    margin: 120px 0 50px 0;
-    font-family: 'Arial Black', Arial, sans-serif;
-    font-size: 36px;
-    font-weight: 900;
-    color: #333333;
-}
-
-.trainer-card {
-    border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    padding: 20px;
-    max-width: 300px;
-    margin: auto;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.trainer-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-
-.trainer-card img {
-    width: 120px;
-    height: 120px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 4px solid #fff;
-    margin: 15px auto;
-    display: block;
-}
-
-.price {
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: #00a5a5;
-}
-
-.book-btn {
-    background-color: #4CB332FF;
+    font-size: 30px;
+    font-weight: 700;
     color: white;
-    border-radius: 25px;
-    padding: 10px 25px;
-    border: none;
-    font-weight: 500;
-}
-
-.book-btn:hover {
-    background-color: #218838;
-}
-
-
-html,
-body {
-    height: 100%;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    scroll-behavior: smooth;
-}
-
-footer {
-    color: white;
-    padding: 15px 20px;
-    text-align: center;
-    background: linear-gradient(128.64deg, #4CB332FF 0%, rgb(27, 183, 105) 100%);
-
+    background: linear-gradient(90deg, #4CB332FF 0%, #00A8A0FF 100%);
+    padding: 40px;
+    border-radius: 16px;
+    width: 60%;
+    margin: 120px auto;
+    box-shadow: 2px 2px 5px #00000020;
 }
 
 
-footer .footer-col {
-    margin: 10px 0;
-}
-
-footer h4 {
-    margin-bottom: 15px;
-    font-size: 18px;
-    border-bottom: 2px solid white;
-    display: inline-block;
-    padding-bottom: 5px;
-}
-
-.social-icons a {
-    margin: 0 10px;
-    display: inline-block;
-    font-size: 20px;
-    color: white;
-    transition: 0.3s;
-}
-
-.social-icons a:hover {
-    color: #222;
-}
-
-.footer-bottom {
-    margin-top: 10px;
-    padding-top: 5px;
-}
+    footer { color: white; padding: 15px 20px; text-align: center; background: linear-gradient(128.64deg, #4CB332FF 0%, rgb(27, 183, 105) 100%); }
+    footer .footer-col { margin: 10px 0; }
+    footer h4 { margin-bottom: 15px; font-size: 18px; border-bottom: 2px solid white; display: inline-block; padding-bottom: 5px; }
+    .social-icons a { margin: 0 10px; display: inline-block; font-size: 20px; color: white; transition: 0.3s; }
+    .social-icons a:hover { color: #222; }
+    .footer-bottom { margin-top: 10px; padding-top: 5px; }
