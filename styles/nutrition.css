@@ -1,35 +1,47 @@
+/* Nav Bar */
 
-  /* Nav Bar */
-
-  .navbar-brand {
+.navbar-brand {
     position: absolute;
     display: flex;
     top: 1px;
-    left: 56px; ;
-    font-family: Arial, Helvetica, sans-serif; /* Heading */
-    font-size: 25px; 
-    line-height: 25px; 
-    font-weight: 700; 
+    left: 56px;
+    ;
+    font-family: Montserrat;
+    /* Heading */
+    font-size: 25px;
+    line-height: 25px;
+    font-weight: 700;
     color: #FFFFFFFF;
     align-items: center;
     margin-left: 4px;
-    
+
 }
 
-#webName{
-    margin-left: 0.5px;
+.hamburger {
+    display: none;
+    font-size: 30px;
+    font-weight: bolder;
+    cursor: pointer;
+    color: white;
+    right: 20px;
+    top: 15px;
+    text-decoration: none;
 }
 
 
-#logo{
+#logo {
+    /*
     width: 25px;
     height: auto;
-    margin-right: 0px;
+    margin-right: 0px;*/
+    width: 125px;
+    margin-top: 4px;
+    height: 30px;
+
 }
 
 .nav {
-    background-color: #4CB332FF ;
-    
+    background-color: #4CB332FF;
 }
 
 /* بيغير لون النص اللي مكتوب في ال Nav */
@@ -38,162 +50,209 @@
     font-size: 15px;
     transition: all 0.3s ease;
 }
+
 .nav-link:hover {
-    color: #000000; 
+    color: #000000;
     font-weight: 500;
-   
+
 }
-.nav-link.active{
-     color: #fbfbfb;
+
+.nav-link.active {
+    color: #fbfbfb;
     font-weight: 600;
-    background-color: #4CB332FF; 
-    box-shadow: 0 4px 6px rgb(48, 110, 32); /* ظل يخليها طالعة لفوق */
-    transform: translateY(-2px); /* يرفعها لفوق */
+    background-color: #4CB332FF;
+    box-shadow: 0 4px 6px rgb(48, 110, 32);
+    /* ظل يخليها طالعة لفوق */
+    transform: translateY(-2px);
+    /* يرفعها لفوق */
 }
 
 
 
 
-                                                                                    /* العنوان*/
- /*هغير لون النص واخليه فالنص واكبر الفونت*/
+/* العنوان*/
+/*هغير لون النص واخليه فالنص واكبر الفونت*/
 
- .title {
-    color:#4CB332FF ;
-    font-size: 48px ;
-    line-height: 60px; 
+.title {
+    color: #4CB332FF;
+    font-size: 48px;
+    line-height: 60px;
     font-weight: 800;
     text-align: center;
-    
- }
 
- .subtitle{
+}
+
+.subtitle {
     text-align: center;
     color: #565D6DFF;
     margin-top: 20px;
     margin-bottom: 200px;
- }
+}
 
 
- .recipes {
+
+.recipes {
     font-size: 36px;
     text-align: center;
     font-weight: bold;
     margin-bottom: 40px;
-    
-    
- }
-.recipes-section{
-    background-color:rgb(244, 244, 251);
-    padding-top: 50px; 
-}
- /*Recipe Nav Bar*/
 
-#recipeNav{
-    position: absolute; 
-    top: 500px; 
-    left: 580px; 
+
+}
+
+.recipes-section {
+    background-color: rgb(244, 244, 251);
+    padding-top: 50px;
+}
+
+/*Recipe Nav Bar*/
+
+#recipeNav {
+    top: 500px;
+    left: 580px;
     border-radius: 50px;
-    background-color:white ;
+    background-color: white;
     align-content: center;
+    background-color: #4CB332FF;
+    width: 400px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-left: 100px;
+    transform: translateX(115%);
+
 }
 
 
 /*Cards*/
 
-.details{
- display: inline-block;
-  margin-right: 18px;
-  margin-left: 10px;
-  font-size:smaller;
-  font-weight: bold;
+.details {
+    display: inline-block;
+    margin-right: 30px;
+    margin-left: 35px;
+    font-size: smaller;
+    font-weight: bold;
+
 }
-.badge{
-    background-color:rgb(39, 125, 17) ;
+
+.badge {
+    background-color: rgb(39, 125, 17);
     margin-right: 190px;
     margin-left: 20px;
     margin-top: 10px;
     margin-bottom: 10px;
+    width: 75px;
 }
 
- .card-text{
+.card-text {
     font-size: small;
- }
+}
 
- .btn {
+.btn {
 
-   background-color:#4CB332FF ;
-   color:#FFFFFFFF ;
-   font-weight: 450;
-   border-radius: 25px;
-   padding: 0 12px;
-   width: 280px; 
-  height: 35px; 
-   display: flex; 
-  align-items: center; 
-  justify-content: center;
-  align-content: center;
-  
-   
- }
-.card1, .card2, .card3, .card4, .card5, .card6{
+    background-color: #4CB332FF;
+    color: #FFFFFFFF;
+    font-weight: 450;
+    border-radius: 25px;
+    border-color: #4CB332FF;
+    border-style: solid;
+    padding: 0 12px;
+    width: 415px;
+    height: 35px;
+
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+
+}
+
+.btn:hover {
+    background-color: rgb(39, 125, 17) !important;
+    border-color: rgb(39, 125, 17) !important;
+    border-style: solid;
+}
+
+.btn:active {
+    background-color: rgb(39, 125, 17) !important;
+    border-color: rgb(39, 125, 17) !important;
+    border-style: solid;
+}
+
+.card1,
+.card2,
+.card3,
+.card4,
+.card5,
+.card6 {
     box-shadow: 0px 0px 1px #171a1f12, 0px 0px 2px #171a1f1F;
     border-radius: 12px;
     flex: 1;
     margin: auto;
-    
+
 }
 
+.steps {
+    font-weight: bold;
+}
 
+/*Personal Plan*/
 .space {
     margin-top: 200;
-    
+
 }
 
 .col-md-4 {
-    margin-bottom: 20px; 
+    margin-bottom: 20px;
 }
 
-.plan{
-  background: #E6FFF1FF; 
-  align-items: center;
-  padding-top: 150px;
-  padding-bottom: 150px;
- 
+.plan {
+    background: #E6FFF1FF;
+    align-items: center;
+    padding-top: 150px;
+    padding-bottom: 150px;
+
 }
-#plan{
+
+#plan {
     margin-left: 170px;
     margin-right: 170px;
     border-radius: 15px;
     border-width: 2px;
-    border-style:solid;
+    border-style: solid;
     border-color: #d7d9dc;
     align-items: center;
 }
 
-#planTitle{
+#planTitle {
     font-weight: bold;
-    font-size:35px;
+    font-size: 35px;
     margin-top: 70px;
     margin-left: 20px;
 
 }
-#planSubtitle{
+
+#planSubtitle {
     font-size: 18px;
     margin-bottom: 20px;
     margin-left: 20px;
 
 }
-.btnPlan{
-    background-color:#4CB332FF ;
-    color:#FFFFFFFF ;
+
+.btnPlan {
+    background-color: #4CB332FF;
+    color: #FFFFFFFF;
     font-size: 14px;
     font-weight: 500;
     border-radius: 25px;
+    border-color: #4CB332FF;
+    border-style: solid;
     padding: 0 12px;
-    width: 200px; 
-    height: 40px; 
-    display: flex; 
-    align-items: center; 
+    width: 200px;
+    height: 40px;
+    display: flex;
+    align-items: center;
     justify-content: center;
     text-decoration: none;
     margin-bottom: 64px;
@@ -201,84 +260,118 @@
     margin-left: 20px;
 }
 
+.btnPlan:hover {
+    background-color: rgb(39, 125, 17);
+    border-color: rgb(39, 125, 17);
+    border-style: solid;
+}
+
+.breakfast {
+    background-color: #f1ed8eff;
+}
+
+.lunch {
+    background-color: #ADD8E6;
+}
+
+.dinner {
+    background-color: #90EE90;
+}
+
 /*BMI CALCULATOR*/
 
-#calculator{
+#calculator {
     margin-top: 150px;
-
 }
 
-.card-title{
+.card-title {
     text-align: center;
 }
 
-.card-text{
+.card-text {
     text-align: center;
 }
 
-.btnBMI{
-    background-color:#4CB332FF ;
-    color:#FFFFFFFF ;
+.btnBMI {
+    background-color: #4CB332FF;
+    color: #FFFFFFFF;
     font-weight: 500;
     border-radius: 25px;
+    border-color: #4CB332FF;
+    border-style: solid;
     padding: 0 12px;
-    width: 150px; 
-    height: 40px; 
-    display: flex; 
-    align-items: center; 
+    width: 150px;
+    height: 40px;
+    display: flex;
+    align-items: center;
     justify-content: center;
     align-content: center;
     text-decoration: none;
     margin: auto;
+}
 
+.btnBMI:hover {
+    background-color: rgb(39, 125, 17);
+    border-color: rgb(39, 125, 17);
+    border-style: solid;
+}
+
+#bmiResult {
+    text-align: center;
+    margin-left: 310px;
+    padding: 10px;
+    padding-top: 50px;
+    font-weight: bold;
+    font-size: larger;
+    background-color: white;
+    width: 300px;
+    border-radius: 20px;
+    background-size: cover;
 }
 
 
-
-
-.inputs{
+.inputs {
     border-radius: 13px;
 }
 
-#calculator{
-   margin: auto ; 
-   border-radius: 16px;
-   border-color: #F5FBF4FF; 
-   border-width: 3px;
-   height: 420px;
-   width: fit-content;
-   padding-top: 50px;
-   
-   
+#calculator {
+    margin: auto;
+    border-radius: 16px;
+    border-color: #F5FBF4FF;
+    border-width: 3px;
+    height: 420px;
+    width: fit-content;
+    padding-top: 50px;
+
+
 }
+
 .container.space:last-of-type {
-   margin-bottom: 200px;  
+    margin-bottom: 200px;
 }
 
 
-.card-title{
-   font-size: 30px;
-   font-weight: bolder;
+.card-title {
+    font-size: 30px;
+    font-weight: bolder;
 }
 
-.text{
+.text {
     font-size: 17px;
     font-weight: 100;
 }
 
-/*Footer*/
-
+/* Start Footer */
 footer {
-    color: white ;
-    padding: 15px 20px;  
+    color: white;
+    padding: 15px 20px;
     text-align: center;
-  background: linear-gradient(128.64deg, #4CB332FF 0%, rgb(27, 183, 105) 100%);
-   
+    background: linear-gradient(128.64deg, #4CB332FF 0%, rgb(27, 183, 105) 100%);
 }
 
 
 footer .footer-col {
-    margin: 10px 0;   
+    margin: 10px 0;
 }
 
 footer h4 {
@@ -302,6 +395,217 @@ footer h4 {
 }
 
 .footer-bottom {
-    margin-top: 10px; 
-    padding-top: 5px; 
+    margin-top: 10px;
+    padding-top: 5px;
+}
+
+/* End Footer */
+/*
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}*/
+
+/* Tablet ipad air*/
+@media (max-width: 768px) {}
+
+/* Mobile Large iphone 12 pro*/
+@media (max-width: 576px) {
+    .title {
+        width: 90%;
+        padding-left: 60px;
+    }
+
+    /*nav bar*/
+    .mainNav {
+        display: none;
+        background-color: #4CB332FF;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        /* تحت الهامبرجر */
+        left: 0;
+        width: 100%;
+        background-color: #4CB332FF;
+        z-index: 1000;
+        color: #4CB332FF;
+    }
+
+    .mainNav .nav-link {
+        color: black;
+        font-weight: bolder;
+
+    }
+
+    .nav-link.active {
+        background-color: transparent;
+    }
+
+    .mainNav li {
+        text-align: start;
+        padding: 10px 0;
+    }
+
+    .hamburger {
+        display: block;
+        /* نعرض زر الهامبرجر */
+        background-color: #4CB332FF;
+    }
+
+    .mainNav.active {
+        display: flex;
+        background-color: white;
+        width: 30%;
+    }
+
+    .nav-link:hover {
+        color: #4CB332FF;
+    }
+
+
+    /*recipe nav*/
+    #recipeNav {
+        transform: translateX(-20%);
+        margin-left: 25%;
+    }
+
+    /*btn*/
+    .btn {
+        /* width: 455px !important;*/
+        width: 100%;
+    }
+
+    /*plan*/
+    .plan {
+        width: 100%;
+
+    }
+
+    #plan {
+        margin-left: 5%;
+        width: 80%;
+        transform: translateX(5%);
+
+    }
+
+    #planTitle {
+        font-size: 130%;
+        font-weight: bolder;
+    }
+
+    #calculator {
+        height: 510px;
+    }
+
+    #bmiResult {
+        transform: translateX(-85%);
+        height: 120px;
+        width: 110%
+    }
+}
+
+/* Mobile Small iphone SE*/
+@media(max-width: 480px) {
+    .title {
+        width: 90%;
+        padding-left: 60px;
+        transform: translateX(-4.5%);
+
+    }
+
+    /*nav bar*/
+    .mainNav {
+        justify-content: center !important;
+    }
+    .navbar-brand{
+        align-items: center;
+         display: flex;
+        justify-content: center;
+    }
+
+
+    .hamburger {
+        display: block;
+        /* نعرض زر الهامبرجر */
+        /* background-color: #4CB332FF ;*/
+        padding-left: 10px;
+
+    }
+
+    .mainNav.active {
+        display: flex;
+        flex-direction: column;
+        /* العناصر تبقى عمودية */
+        position: absolute;
+        top: 60px;
+        /* تحت الهامبرجر */
+        left: 0;
+        width: 100%;
+        /* background-color: #4CB332FF;*/
+    }
+
+    .mainNav li {
+        text-align: start;
+        padding: 10px 0;
+    }
+
+    /*recipe nav*/
+    #recipeNav {
+
+        transform: translateX(-24.5%);
+        max-width: 97%;
+        margin-left: 25%;
+    }
+
+    .details {
+        width: 13%;
+        transform: translateX(40%);
+
+    }
+
+    /*btn*/
+    .btn {
+        /* width: 455px !important;*/
+        width: 100%;
+    }
+
+    /*plan*/
+    .plan {
+        width: 100%;
+
+    }
+
+    #plan {
+        margin-left: 5%;
+        width: 80%;
+        transform: translateX(5%);
+
+    }
+
+    #planTitle {
+        font-size: 130%;
+        font-weight: bolder;
+    }
+
+    #calculator {
+        height: 510px;
+    }
+
+    #bmiResult {
+        transform: translateX(-96.5%);
+        height: 24%;
+        width: 111%
+    }
+    #logo{
+    display: block;  /* خليه يظهر */
+    width: 120px;    /* الحجم اللي انتي عايزاه */
+    height: auto;
+}
 }
