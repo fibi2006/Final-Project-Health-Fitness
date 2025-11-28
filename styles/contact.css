@@ -1,56 +1,29 @@
 :root {
     --green: #4CB332FF;
 }
-
-/* Start Navbar */
-  .navbar-brand {
-    position: absolute;
-    display: flex;
-    top: 1px;
-    left: 56px; ;
-    font-size: 25px; 
-    line-height: 25px; 
-    font-weight: 700; 
-    color: #FFFFFFFF;
-    align-items: center;
-    margin-left: 4px;
-    
+/* Mohamed Navbar */
+/* Start Navbar  */
+.navbar {
+    background-color: var(--green);
+    font-size: 20px;
+    width: 100%;
 }
-
-#webName{
-    margin-left: 0.5px;
+.navbar-brand {
+    transition: 0.3s;
+    transition-timing-function: linear;
 }
-
-#logo{
-    width: 25px;
-    height: auto;
-    margin-right: 0px;
+.navbar-brand:hover {
+    letter-spacing: 1px;
+    transform: scale(1.02);
 }
-
-.nav {
-    background-color: #4CB332FF ;
-    
+.navbar-nav .nav-link {
+    transition: 0.5s;
 }
-
-/* بيغير لون النص اللي مكتوب في ال Nav */
-.nav-link {
-    color: #FFFFFFFF;
-    font-size: 15px;
-    transition: all 0.3s ease;
+.navbar-nav .nav-link:hover {
+    transform: translateY(4px);
+    color: white;
 }
-.nav-link:hover {
-    color: #000000; 
-    font-weight: 500;
-   
-}
-.nav-link.active{
-     color: #fbfbfb;
-    font-weight: 600;
-    background-color: #4CB332FF; 
-    box-shadow: 0 4px 6px rgb(48, 110, 32); /* ظل يخليها طالعة لفوق */
-    transform: translateY(-2px); /* يرفعها لفوق */
-}
-/* End Navbar */
+/* End Navbar  */
 
 /* Start Main */
 h1 {
@@ -69,7 +42,7 @@ h1 {
     left: -7px; 
     color: var(--green);
 }
-p {
+h1 + p {
     font-size: 18px;
     font-weight: 400;
     color: #565D6DFF;
@@ -78,10 +51,11 @@ p {
     text-align: center;
 }
 .contact-form {
-    width: 672px;
-    height: 672px;
+    box-sizing: border-box;
+    max-width: 672px;
+    height: auto;
     padding: 60px;
-    margin: auto;
+    margin: 50px auto;
     margin-top: 50px;
     border-radius: 10px;
     box-shadow: 2px 2px 5px #171a1f12, 0px 0px 2px #171a1f1F;
@@ -99,16 +73,18 @@ label {
     margin-bottom: 10px
 }
 input {
-    width: 560px;
+    box-sizing: border-box;
+    width: 100%;
     height: 53px;
     border-radius: 10px;
     border: 1px solid #DEE1E6FF;
     padding: 14px;
-    margin-bottom: 40px;
+    margin-bottom: 10px;
     outline: none;
 }
 textarea {
-    width: 560px;
+    box-sizing: border-box;
+    width: 100%;
     height: 118px;
     padding: 12px;
     border-radius: 10px;
@@ -122,10 +98,10 @@ textarea {
     background: linear-gradient(90deg, #4CB332FF 0%, #00A8A0FF 100%);
     color: white ;
     font-size: 18px;
-    width: 560px;
+    width: 100%;
     height: 40px;
     border-radius: 16px;
-    margin-top: 30px;
+    margin-top: 20px;
     transition: 0.3s;
 }
 .contact-btn:hover {
@@ -140,14 +116,13 @@ textarea {
 
 
  /* Start Footer */
- footer {
+footer {
     color: white ;
     padding: 15px 20px;  
     text-align: center;
-  background: linear-gradient(128.64deg, #4CB332FF 0%, rgb(27, 183, 105) 100%);
+    background: linear-gradient(128.64deg, #4CB332FF 0%, rgb(27, 183, 105) 100%);
    
 }
-
 
 footer .footer-col {
     margin: 10px 0;   
