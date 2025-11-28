@@ -1,34 +1,51 @@
 :root {
     --green: #4CB332FF;
 }
-/* Start Navbar  */
-  .navbar-brand {
+/* Nav Bar */
+
+.navbar-brand {
     position: absolute;
     display: flex;
     top: 1px;
     left: 56px;
-    font-size: 25px; 
-    line-height: 25px; 
-    font-weight: 700; 
+    ;
+    font-family: Montserrat;
+    /* Heading */
+    font-size: 25px;
+    line-height: 25px;
+    font-weight: 700;
     color: #FFFFFFFF;
     align-items: center;
     margin-left: 4px;
-    
+
 }
 
-#webName{
-    margin-left: 0.5px;
+.hamburger {
+    display: none;
+    font-size: 30px;
+    font-weight: bolder;
+    cursor: pointer;
+    color: white;
+    right: 20px;
+    top: 15px;
+    text-decoration: none;
 }
 
-#logo{
+
+#logo {
+    /*
     width: 25px;
     height: auto;
-    margin-right: 0px;
+    margin-right: 0px;*/
+    width: 125px;
+    margin-top: 4px;
+    height: 30px;
+
 }
 
 .nav {
-    background-color: #4CB332FF ;
-    
+    background-color: #4CB332FF;
+
 }
 
 /* بيغير لون النص اللي مكتوب في ال Nav */
@@ -37,20 +54,22 @@
     font-size: 15px;
     transition: all 0.3s ease;
 }
-.nav-link:hover {
-    color: #000000; 
-    font-weight: 500;
-   
-}
-.nav-link.active{
-     color: #fbfbfb;
-    font-weight: 600;
-    background-color: #4CB332FF; 
-    box-shadow: 0 4px 6px rgb(48, 110, 32); /* ظل يخليها طالعة لفوق */
-    transform: translateY(-2px); /* يرفعها لفوق */
-}
-/* End Navbar  */
 
+.nav-link:hover {
+    color: #000000;
+    font-weight: 500;
+
+}
+
+.nav-link.active {
+    color: #fbfbfb;
+    font-weight: 600;
+    background-color: #4CB332FF;
+    box-shadow: 0 4px 6px rgb(48, 110, 32);
+    /* ظل يخليها طالعة لفوق */
+    transform: translateY(-2px);
+    /* يرفعها لفوق */
+}
 /* Start Main */
 h1 {
     width: fit-content;
@@ -179,3 +198,197 @@ footer h4 {
     padding-top: 5px;
 }
 /* End Footer */
+
+/* Mobile Large iphone 12 pro*/
+@media (max-width: 576px) {
+    .title {
+        width: 90%;
+        padding-left: 60px;
+    }
+
+    /*nav bar*/
+    .mainNav {
+        display: none;
+        background-color: #4CB332FF;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        /* تحت الهامبرجر */
+        left: 0;
+        width: 100%;
+        background-color: #4CB332FF;
+        z-index: 1000;
+        color: #4CB332FF;
+    }
+
+    .mainNav .nav-link {
+        color: black;
+        font-weight: bolder;
+
+    }
+
+    .nav-link.active {
+        background-color: transparent;
+    }
+
+    .mainNav li {
+        text-align: start;
+        padding: 10px 0;
+    }
+
+    .hamburger {
+        display: block;
+        /* نعرض زر الهامبرجر */
+        background-color: #4CB332FF;
+    }
+
+    .mainNav.active {
+        display: flex;
+        background-color: white;
+        width: 30%;
+    }
+
+    .nav-link:hover {
+        color: #4CB332FF;
+    }
+
+
+    /*recipe nav*/
+    #recipeNav {
+        transform: translateX(-20%);
+        margin-left: 25%;
+    }
+
+    /*btn*/
+    .btn {
+        /* width: 455px !important;*/
+        width: 100%;
+    }
+
+    /*plan*/
+    .plan {
+        width: 100%;
+
+    }
+
+    #plan {
+        margin-left: 5%;
+        width: 80%;
+        transform: translateX(5%);
+
+    }
+
+    #planTitle {
+        font-size: 130%;
+        font-weight: bolder;
+    }
+
+    #calculator {
+        height: 510px;
+    }
+
+    #bmiResult {
+        transform: translateX(-85%);
+        height: 120px;
+        width: 110%
+    }
+}
+
+/* Mobile Small iphone SE*/
+@media(max-width: 480px) {
+    .title {
+        width: 90%;
+        padding-left: 60px;
+        transform: translateX(-4.5%);
+
+    }
+
+    /*nav bar*/
+    .mainNav {
+        justify-content: center !important;
+    }
+    .navbar-brand{
+        align-items: center;
+         display: flex;
+        justify-content: center;
+    }
+
+
+    .hamburger {
+        display: block;
+        /* نعرض زر الهامبرجر */
+        /* background-color: #4CB332FF ;*/
+        padding-left: 10px;
+
+    }
+
+    .mainNav.active {
+        display: flex;
+        flex-direction: column;
+        /* العناصر تبقى عمودية */
+        position: absolute;
+        top: 60px;
+        /* تحت الهامبرجر */
+        left: 0;
+        width: 100%;
+        /* background-color: #4CB332FF;*/
+    }
+
+    .mainNav li {
+        text-align: start;
+        padding: 10px 0;
+    }
+
+    /*recipe nav*/
+    #recipeNav {
+
+        transform: translateX(-24.5%);
+        max-width: 97%;
+        margin-left: 25%;
+    }
+
+    .details {
+        width: 13%;
+        transform: translateX(40%);
+
+    }
+
+    /*btn*/
+    .btn {
+        /* width: 455px !important;*/
+        width: 100%;
+    }
+
+    /*plan*/
+    .plan {
+        width: 100%;
+
+    }
+
+    #plan {
+        margin-left: 5%;
+        width: 80%;
+        transform: translateX(5%);
+
+    }
+
+    #planTitle {
+        font-size: 130%;
+        font-weight: bolder;
+    }
+
+    #calculator {
+        height: 510px;
+    }
+
+    #bmiResult {
+        transform: translateX(-96.5%);
+        height: 24%;
+        width: 111%
+    }
+    #logo{
+    display: block;  /* خليه يظهر */
+    width: 120px;    /* الحجم اللي انتي عايزاه */
+    height: auto;
+}
+}
