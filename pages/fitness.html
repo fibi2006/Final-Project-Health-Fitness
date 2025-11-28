@@ -8,39 +8,50 @@
     <link rel="icon" href="../image/favicon.png" width="" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="../styles/fitness.css">
 </head>
 
 <body>
     <!-- Start Navbar -->
-    <nav class="fixed-top">
-        <ul class="nav justify-content-center">
-            <li class="nav-item">
-                <a class="navbar-brand " href="../index.html">
-                    <img src="./../image/nutrition/Logo.png" alt="Logo" id="logo" class="me-2">
-                    <span id="webName">FitWay</span>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link home" href="../index.html">Home</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link nutrition"  href="nutrition.html">Nutrition</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link fitness active" aria-current="page" href="fitness.html">Fitness</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link trainers"  href="trainers.html">Trainers</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link rewards" href="rewards.html">Rewards</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link Contact" href="contact.html">Contact</a>
-            </li>
-        </ul>
+    <nav class="navbar navbar-expand-lg navbar-dark p-2">
+        <div class="container-fluid">
+            <a class="navbar-brand text-white ms-3 fw-bold fs-2" href="../index.html">FitWay</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item mx-lg-2">
+                        <a class="nav-link" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item mx-lg-2">
+                        <a class="nav-link" href="nutrition.html">Nutrition</a>
+                    </li>
+                    <li class="nav-item mx-lg-2">
+                        <a class="nav-link active" aria-current="page" href="fitness.html">Fitness</a>
+                    </li>
+                    <li class="nav-item mx-lg-2">
+                        <a class="nav-link" href="trainers.html">Trainers</a>
+                    </li>
+                    <li class="nav-item mx-lg-2">
+                        <a class="nav-link" href="rewards.html">Rewards</a>
+                    </li>
+                    <li class="nav-item mx-lg-2">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item mx-lg-2">
+                        <a class="nav-link" href="login.html">Login</a>
+                    </li>
+                    <li class="nav-item mx-lg-2">
+                        <a class="nav-link" href="Register.html">Register</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </nav>
     <!-- End Navbar -->
 
@@ -50,7 +61,7 @@
             <h1>Unleash Your Full Potential</h1>
             <p>Discover personalized workout plans and exciting challenges designed <br> to transform your body and
                 mind.</p>
-            <a href="#" class="btn btn-lg main-btn rounded-pill">Explore Workouts</a>
+            <a href="#exercises" class="btn btn-lg main-btn">Explore Workouts</a>
         </div>
     </div>
     <!-- End main text -->
@@ -60,41 +71,50 @@
     </div>
 
     <!-- Start Workouts -->
-    <div class="container">
+    <div class="container" id="exercises">
         <!-- Beginners -->
         <div class="row my-5">
             <span class="workouts-title">Beginners Workouts</span>
-            <div class="col-lg-4 col-md-6 col-12 ">
+
+            <div class="col-lg-4 col-md-6 col-12">
                 <div class="card h-90">
-                    <img src="../image/Gentle Stretching.jpg" class="card-img-top card-img-fixed" alt="Gentle Stretching">
+                    <img src="../image/Gentle Stretching.jpg" loading="lazy" class="card-img-top card-img-fixed"
+                        alt="Gentle Stretching">
                     <div class="card-body">
                         <span class="workout-icons"><i class="fa-solid fa-heart-pulse fa-2xl"></i></span>
                         <h5 class="card-title">Gentle Stretching</h5>
                         <p class="card-text">Start your fitness journey with light and effective stretching routines.
                         </p>
-                        <a href="#" class="btn main-btn full-btn">View Workout</a>
+                        <a href="workout.html?video=L_xrDAtykMI&title=Gentle%20Stretching" target="_blank"
+                            class="btn main-btn full-btn">View Workout</a>
                     </div>
                 </div>
             </div>
+
             <div class="col-lg-4 col-md-6 col-12">
                 <div class="card h-90">
-                    <img src="../image/Bodyweight Basics.jpg" class="card-img-top card-img-fixed" alt="Bodyweight Basics">
+                    <img src="../image/Bodyweight Basics.jpg" loading="lazy" class="card-img-top card-img-fixed"
+                        alt="Bodyweight Basics">
                     <div class="card-body">
                         <span class="workout-icons"><i class="fa-solid fa-hand-back-fist fa-2xl"></i></span>
                         <h5 class="card-title">Bodyweight Basics</h5>
                         <p class="card-text">Learn fundamental movements with simple bodyweight exercises at home.</p>
-                        <a href="#" class="btn main-btn full-btn">View Workout</a>
+                        <a href="workout.html?video=RocudKlpQeI&title=Bodyweight%20Basics" target="_blank"
+                            class="btn main-btn full-btn">View Workout</a>
                     </div>
                 </div>
             </div>
+
             <div class="col-lg-4 col-md-6 col-12">
                 <div class="card h-90">
-                    <img src="../image/Morning Cardio.jpg" class="card-img-top card-img-fixed" alt="Morning Cardio">
+                    <img src="../image/Morning Cardio.jpg" loading="lazy" class="card-img-top card-img-fixed"
+                        alt="Morning Cardio">
                     <div class="card-body">
                         <span class="workout-icons"><i class="fa-solid fa-person-running fa-2xl"></i></span>
                         <h5 class="card-title">Morning Cardio</h5>
                         <p class="card-text">Boost your energy with quick and easy morning cardio sessions.</p>
-                        <a href="#" class="btn main-btn full-btn">View Workout</a>
+                        <a href="workout.html?video=pxegq_K6jqI&title=Morning%20Cardio" target="_blank"
+                            class="btn main-btn full-btn">View Workout</a>
                     </div>
                 </div>
             </div>
@@ -103,37 +123,46 @@
         <!-- Intermediate -->
         <div class="row my-5">
             <span class="workouts-title">Intermediate Workouts</span>
-            <div class="col-lg-4 col-md-6 col-12 ">
+
+            <div class="col-lg-4 col-md-6 col-12">
                 <div class="card h-90">
-                    <img src="../image/Strength Building.jpg" class="card-img-top card-img-fixed" alt="Strength Building">
+                    <img src="../image/Strength Building.jpg" loading="lazy" class="card-img-top card-img-fixed"
+                        alt="Strength Building">
                     <div class="card-body">
                         <span class="workout-icons"><i class="fa-solid fa-dumbbell fa-xl"></i></span>
                         <h5 class="card-title">Strength Building</h5>
                         <p class="card-text">Elevate your strength with progressive resistance training techniques.</p>
-                        <a href="#" class="btn main-btn full-btn">View Workout</a>
+                        <a href="workout.html?video=1VvgNZsg9nc&title=Strength%20Building" target="_blank"
+                            class="btn main-btn full-btn">View Workout</a>
                     </div>
                 </div>
             </div>
+
             <div class="col-lg-4 col-md-6 col-12">
                 <div class="card h-90">
-                    <img src="../image/Interval Training.jpg" class="card-img-top card-img-fixed" alt="Interval Training">
+                    <img src="../image/Interval Training.jpg" loading="lazy" class="card-img-top card-img-fixed"
+                        alt="Interval Training">
                     <div class="card-body">
                         <span class="workout-icons"><i class="fa-solid fa-fire-flame-curved fa-xl"></i></span>
                         <h5 class="card-title">Interval Training</h5>
                         <p class="card-text">Intensify your workouts with effective high-intensity interval training
                             (HIIT).</p>
-                        <a href="#" class="btn main-btn full-btn">View Workout</a>
+                        <a href="workout.html?video=J212vz33gU4&title=Interval%20Training" target="_blank"
+                            class="btn main-btn full-btn">View Workout</a>
                     </div>
                 </div>
             </div>
+
             <div class="col-lg-4 col-md-6 col-12">
                 <div class="card h-90">
-                    <img src="../image/Core & Stability.jpg" class="card-img-top card-img-fixed" alt="Core & Stability">
+                    <img src="../image/Core & Stability.jpg" loading="lazy" class="card-img-top card-img-fixed"
+                        alt="Core & Stability">
                     <div class="card-body">
                         <span class="workout-icons"><i class="fa-solid fa-heart-pulse fa-2xl"></i></span>
                         <h5 class="card-title">Core & Stability</h5>
                         <p class="card-text">Develop a strong core and improve overall body stability.</p>
-                        <a href="#" class="btn main-btn full-btn">View Workout</a>
+                        <a href="workout.html?video=b_TTLmmQmXU&title=Core%20%26%20Stability" target="_blank"
+                            class="btn main-btn full-btn">View Workout</a>
                     </div>
                 </div>
             </div>
@@ -142,113 +171,114 @@
         <!-- Advanced -->
         <div class="row my-5">
             <span class="workouts-title">Advanced Workouts</span>
-            <div class="col-lg-4 col-md-6 col-12 ">
+
+            <div class="col-lg-4 col-md-6 col-12">
                 <div class="card h-90">
-                    <img src="../image/Advanced HIIT.jpg" class="card-img-top card-img-fixed" alt="Advanced HIIT">
+                    <img src="../image/Advanced HIIT.jpg" loading="lazy" class="card-img-top card-img-fixed"
+                        alt="Advanced HIIT">
                     <div class="card-body">
                         <span class="workout-icons"><i class="fa-solid fa-person-skating fa-2xl"></i></span>
                         <h5 class="card-title">Advanced HIIT</h5>
                         <p class="card-text">Push your limits with advanced high-intensity interval training protocols.
                         </p>
-                        <a href="#" class="btn main-btn full-btn">View Workout</a>
+                        <a href="workout.html?video=GRAFAs8ppDY&title=Advanced%20HIIT" target="_blank"
+                            class="btn main-btn full-btn">View Workout</a>
                     </div>
                 </div>
             </div>
+
             <div class="col-lg-4 col-md-6 col-12">
                 <div class="card h-90">
-                    <img src="../image/Powerlifting Fundamentals.jpg" class="card-img-top card-img-fixed"
+                    <img src="../image/Powerlifting Fundamentals.jpg" loading="lazy" class="card-img-top card-img-fixed"
                         alt="Powerlifting Fundamentals">
                     <div class="card-body">
                         <span class="workout-icons"><i class="fa-solid fa-dumbbell fa-xl"></i></span>
                         <h5 class="card-title">Powerlifting Fundamentals</h5>
                         <p class="card-text">Master the basics of powerlifting for significant strength gains.</p>
-                        <a href="#" class="btn main-btn full-btn">View Workout</a>
+                        <a href="workout.html?video=JBJqZKx7MLI&title=Powerlifting%20Fundamentals" target="_blank"
+                            class="btn main-btn full-btn">View Workout</a>
                     </div>
                 </div>
             </div>
+
             <div class="col-lg-4 col-md-6 col-12">
                 <div class="card h-90">
-                    <img src="../image/Marathon Prep.jpg" class="card-img-top card-img-fixed" alt="Marathon Prep">
+                    <img src="../image/Marathon Prep.jpg" loading="lazy" class="card-img-top card-img-fixed"
+                        alt="Marathon Prep">
                     <div class="card-body">
                         <span class="workout-icons"><i class="fa-solid fa-person-running fa-2xl"></i></span>
                         <h5 class="card-title">Marathon Prep</h5>
                         <p class="card-text">Comprehensive training plan to prepare for long-distance running events.
                         </p>
-                        <a href="#" class="btn main-btn full-btn">View Workout</a>
+                        <a href="workout.html?video=5tabss1Iye0&title=Marathon%20Prep" target="_blank"
+                            class="btn main-btn full-btn">View Workout</a>
                     </div>
                 </div>
             </div>
         </div>
+
     </div>
     <!-- End Workouts -->
 
-    <!-- Start Fitness -->
+    <!-- Start Fitness Challenges -->
     <div class="container-fluid fitness">
         <div class="text-center sub-heading">
             <span class="sub-heading-text">Fitness Challenges</span>
         </div>
         <div class="row">
-            <div class="col-lg-4 col-md-6 col-12">
-                <div class="card card-fitness h-90 w-100">
+            <div class="col-lg-4 col-md-6 col-12 mb-5">
+                <div class="card card-fitness h-100 w-100" data-challenge="core-30">
                     <div class="card-body">
                         <span class="fitness-icons"><i class="fa-solid fa-medal fa-2xl"></i></span>
                         <h5 class="card-title-fitness">30-Day Core Strength</h5>
-                        <p class="card-text">Strengthen your core with a comprehensive 30-day program.
-                        </p>
-                        <label for="">Progress:</label>
-                        <div class="progress" role="progressbar" aria-label="Success example" aria-valuenow="60"
-                            aria-valuemin="0" aria-valuemax="100">
-                            <div class="progress-bar" style="width: 60%">60%</div>
+                        <p class="card-text">Strengthen your core with a 30-day program.</p>
+                        <label>Progress:</label>
+                        <div class="progress" role="progressbar" aria-label="Core 30 progress" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar" style="width: 0%">0%</div>
                         </div>
-                        <a href="#" class="btn main-btn full-btn">Mark as Completed</a>
+                        <button class="btn main-btn full-btn challenge-btn mt-3" data-challenge="core-30">+10% Progress</button>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6 col-12">
-                <div class="card card-fitness h-90 w-100">
+            <div class="col-lg-4 col-md-6 col-12 mb-5">
+                <div class="card card-fitness h-100 w-100" data-challenge="10k">
                     <div class="card-body">
                         <span class="fitness-icons"><i class="fa-solid fa-trophy fa-2xl"></i></span>
                         <h5 class="card-title-fitness">10K Running Challenge</h5>
-                        <p class="card-text">Build endurance and speed to complete your first 10K run.
-                        </p>
-                        <label for="">Progress:</label>
-                        <div class="progress" role="progressbar" aria-label="Success example" aria-valuenow="30"
-                            aria-valuemin="0" aria-valuemax="100">
-                            <div class="progress-bar" style="width: 30%">30%</div>
+                        <p class="card-text">Build endurance & speed to complete your first 10K run.</p>
+                        <label>Progress:</label>
+                        <div class="progress" role="progressbar" aria-label="10k progress" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar" style="width: 0%">0%</div>
                         </div>
-                        <a href="#" class="btn main-btn full-btn">Mark as Completed</a>
+                        <button class="btn main-btn full-btn challenge-btn mt-3" data-challenge="10k">+10% Progress</button>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6 col-12">
-                <div class="card card-fitness h-90 w-100">
+            <div class="col-lg-4 col-md-6 col-12 mb-5">
+                <div class="card card-fitness h-100 w-100" data-challenge="yoga-flow">
                     <div class="card-body">
-                         <span class="fitness-icons"><i class="fa-solid fa-bullseye fa-2xl"></i></span>   
+                        <span class="fitness-icons"><i class="fa-solid fa-bullseye fa-2xl"></i></span>
                         <h5 class="card-title-fitness">Yoga Flexibility Flow</h5>
-                        <p class="card-text">Improve your flexibility and balance with daily yoga sessions.
-                        </p>
-                        <label for="">Progress:</label>
-                        <div class="progress" role="progressbar" aria-label="Success example" aria-valuenow="50"
-                            aria-valuemin="0" aria-valuemax="100">
-                            <div class="progress-bar" style="width: 50%">50%</div>
+                        <p class="card-text">Improve flexibility and balance with daily yoga sessions.</p>
+                        <label>Progress:</label>
+                        <div class="progress" role="progressbar" aria-label="Yoga flow progress" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar" style="width: 0%">0%</div>
                         </div>
-                        <a href="#" class="btn main-btn full-btn">Mark as Completed</a>
+                        <button class="btn main-btn full-btn challenge-btn mt-3" data-challenge="yoga-flow">+10% Progress</button>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6 col-12">
-                <div class="card card-fitness h-90 w-100">
+            <div class="col-lg-4 col-md-6 col-12 mb-5">
+                <div class="card card-fitness h-100 w-100" data-challenge="full-blast">
                     <div class="card-body">
                         <span class="fitness-icons"><i class="fa-solid fa-award fa-2xl"></i></span>
                         <h5 class="card-title-fitness">Full Body Blast</h5>
-                        <p class="card-text">High-intensity full-body workouts for maximum calorie burn.
-                        </p>
-                        <label for="">Progress:</label>
-                        <div class="progress" role="progressbar" aria-label="Success example" aria-valuenow="80"
-                            aria-valuemin="0" aria-valuemax="100">
-                            <div class="progress-bar" style="width: 80%">80%</div>
+                        <p class="card-text">High-intensity full-body workouts for maximum calorie burn.</p>
+                        <label>Progress:</label>
+                        <div class="progress" role="progressbar" aria-label="Full blast progress" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar" style="width: 0%">0%</div>
                         </div>
-                        <a href="#" class="btn main-btn full-btn">Mark as Completed</a>
+                        <button class="btn main-btn full-btn challenge-btn mt-3" data-challenge="full-blast">+10% Progress</button>
                     </div>
                 </div>
             </div>
@@ -257,8 +287,8 @@
     </div>
     <!-- End Fitness -->
 
-    <!-- Start Footer  -->
-     <footer>
+    <!-- Start Footer Challenges -->
+    <footer>
         <div class="footer-col">
             <h4>Contact Us</h4>
             <div class="social-icons">
@@ -275,10 +305,11 @@
     </footer>
 
     <!-- End Footer  -->
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
+
+    <script src="../script/challenges.js"></script>
 </body>
 
 </html>
