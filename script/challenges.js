@@ -20,12 +20,40 @@ document.addEventListener("DOMContentLoaded", () => {
     const btn = card.querySelector(".challenge-btn");
     if (!progressEl || !btn) return;
 
-    // Reset to 0% on load
-    let current = setProgress(progressEl, 0);
+    const challengeName = card.getAttribute("data-challenge");
+    const today = new Date().toISOString().split('T')[0];
+
+    // جلب حالة التقدم من localStorage
+    let state = JSON.parse(localStorage.getItem(challengeName)) || { progress: 0, lastUpdate: null };
+
+    // تحديث progress عند تحميل الصفحة
+    let current = setProgress(progressEl, state.progress);
+
+    // تعطيل الزر لو ضغط اليوم
+    if (state.lastUpdate === today) {
+      btn.disabled = true;
+      btn.textContent = "Done Today";
+    }
 
     btn.addEventListener("click", (e) => {
       e.preventDefault();
+
+      // منع الضغط أكثر من مرة في اليوم
+      const now = new Date().toISOString().split('T')[0];
+      if (state.lastUpdate === now) return;
+
+      // زيادة التقدم
       current = setProgress(progressEl, Math.min(100, current + STEP));
+
+      // حفظ التحديث في localStorage
+      state.progress = current;
+      state.lastUpdate = now;
+      localStorage.setItem(challengeName, JSON.stringify(state));
+
+      // تعطيل الزر بعد الضغط
+      btn.disabled = true;
+      btn.textContent = "Done Today";
     });
   });
 });
+لع
