@@ -58,15 +58,14 @@
 
 }
 
-.‪nav-link.active‬ {
-    color: #fbfbfb;
+.nav-link.active {
+    color: #fbfbfb !important;
     font-weight: 600;
     background-color: #4CB332FF;
     box-shadow: 0 4px 6px rgb(48, 110, 32);
-    /* ظل يخليها طالعة لفوق */
     transform: translateY(-2px);
-    /* يرفعها لفوق */
 }
+
 
 
 
@@ -80,7 +79,7 @@
         padding-left: 60px;
     }
 
-   
+
     .mainNav {
         display: none;
         background-color: #4CB332FF;
@@ -101,9 +100,11 @@
 
     }
 
-    .‪nav-link.active‬ {
-        background-color: transparent;
+    .mainNav .nav-link.active {
+        background-color: transparent !important;
+        color: #4CB332FF !important;
     }
+
 
     .mainNav li {
         text-align: start;
@@ -116,30 +117,31 @@
         background-color: #4CB332FF;
     }
 
-    .‪mainNav.active‬ {
-        display: flex;
-        background-color: white;
-        width: 30%;
-    }
+    .mainNav.active {
+    display: flex;
+    background-color: white;
+    width: 30%;
+}
+
 
     .nav-link:hover {
         color: #4CB332FF;
     }
 
 
-    
+
     #recipeNav {
         transform: translateX(-20%);
         margin-left: 25%;
     }
 
-    
+
     .btn {
         /* width: 455px !important;*/
         width: 100%;
     }
 
-    
+
     .plan {
         width: 100%;
 
@@ -177,13 +179,14 @@
 
     }
 
-    
+
     .mainNav {
         justify-content: center !important;
     }
-    .navbar-brand{
+
+    .navbar-brand {
         align-items: center;
-         display: flex;
+        display: flex;
         justify-content: center;
     }
 
@@ -213,7 +216,7 @@
         padding: 10px 0;
     }
 
-    
+
     #recipeNav {
 
         transform: translateX(-24.5%);
@@ -227,13 +230,13 @@
 
     }
 
-    
+
     .btn {
         /* width: 455px !important;*/
         width: 100%;
     }
 
-   
+
     .plan {
         width: 100%;
 
@@ -260,11 +263,14 @@
         height: 24%;
         width: 111%
     }
-    #logo{
-    display: block;  /* خليه يظهر */
-    width: 120px;    /* الحجم اللي انتي عايزاه */
-    height: auto;
-}
+
+    #logo {
+        display: block;
+        /* خليه يظهر */
+        width: 120px;
+        /* الحجم اللي انتي عايزاه */
+        height: auto;
+    }
 }
 
 
